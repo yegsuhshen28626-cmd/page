@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Galaxy Space 💖</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'DungGeunMo', 'Pretendard', sans-serif;
+            background: linear-gradient(135deg, #ffc3a0 0%, #ffaaf8 50%, #b2aaff 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #4a4a4a;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(12px);
+            width: 100%;
+            max-width: 450px;
+            border-radius: 30px;
+            padding: 30px 25px;
+            box-shadow: 0 15px 35px rgba(235, 120, 180, 0.25);
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+        }
+
+        /* 프로필 이미지 보더 및 효과 */
+        .profile-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px auto;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .status-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: #ff6b81;
+            color: white;
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #574b90;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .sub-title {
+            font-size: 13px;
+            color: #786fa6;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* 흘러가는 전광판 텍스트 */
+        .marquee-box {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 12px;
+            padding: 8px 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 12px;
+            color: #e84393;
+            border: 1px dashed #f78fb3;
+        }
+
+        /* 링크 버튼 스타일 */
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            background: #ffffff;
+            color: #574b90;
+            text-decoration: none;
+            border-radius: 18px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f8a5c2;
+        }
+
+        .link-item:hover {
+            transform: translateY(-3px);
+            background: #ff75a0;
+            color: #ffffff;
+            box-shadow: 0 6px 18px rgba(255, 117, 160, 0.4);
+            border-color: #ff75a0;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #b5b5b5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="profile-container">
+            <!-- 좋아하는 사진의 이미지 주소(URL)를 아래 src="" 안에 넣어주세요 -->
+            <img src="https://i.pinimg.com/564x/fa/5f/86/fa5f866412f862ef6dd6e61fcf11d7ef.jpg" alt="Profile" class="profile-img">
+            <span class="status-badge">♥ ON</span>
+        </div>
+
+        <h1>My Favorite Star 🎀</h1>
+        <p class="sub-title">내가 사랑하는 순간들을 기록하는 공간</p>
+
+        <div class="marquee-box">
+            <marquee behavior="scroll" direction="left">✨ Welcome to My Archive! 매일매일 더 사랑해 ✨</marquee>
+        </div>
+
+        <div class="link-list">
+            <a href="https://twitter.com" target="_blank" class="link-item">💌 X (Twitter)</a>
+            <a href="https://instagram.com" target="_blank" class="link-item">📸 Instagram</a>
+            <a href="https://youtube.com" target="_blank" class="link-item">🎬 YouTube Stage Video</a>
+        </div>
+
+        <div class="footer">
+            © 2026 My Fan Page. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
